@@ -42,7 +42,7 @@ class OrderServiceWireMockIT {
         }
     }
 
-    @BeforeEach // Add this method
+    @BeforeEach
     void resetWireMock() {
         // Reset mappings and request journal before each test
         wireMockServer.resetAll();
@@ -56,7 +56,6 @@ class OrderServiceWireMockIT {
     @Test
     void shouldReturnOrderDetails() {
         // Stub
-        // Note: Can use wireMockServer.stubFor(...) or just stubFor(...) after static import
         stubFor(get(urlEqualTo("/orders/123"))
                 .willReturn(aResponse()
                         .withStatus(200)

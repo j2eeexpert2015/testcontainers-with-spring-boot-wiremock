@@ -39,17 +39,13 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- WireMock Testcontainers Module (Dedicated module for Testcontainers
-		integration) -->
+		<!-- WireMock Testcontainers Module -->
 		<dependency>
 			<groupId>org.wiremock.integrations.testcontainers</groupId>
 			<artifactId>wiremock-testcontainers-module</artifactId>
 			<version>1.0-alpha-15</version>
 			<scope>test</scope>
 		</dependency>
-
-		
-
 
 		<!-- Testcontainers Core -->
 		<dependency>
