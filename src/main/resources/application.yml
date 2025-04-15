@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+product:
+  service:
+    base-url: http://localhost:8081  # overridden in test with WireMock
